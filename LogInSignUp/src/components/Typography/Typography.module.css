@@ -1,0 +1,79 @@
+.typography {
+  color: inherit;
+  line-height: 100%;
+}
+
+.typographyColorInherit {
+  color: inherit;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.h1,
+.button{
+  font-weight: bold;
+}
+
+.caption,
+.body,
+.sectionLabel,
+.label {
+  font-weight: normal;
+}
+
+.body2,
+.h2,
+.h3 {
+  font-weight: 500;
+}
+
+.h2 {
+  font-size: 1.5rem;
+}
+
+.h3 {
+  font-size: 1.35rem;
+}
+
+.h1 {
+  font-size: 1.625rem;
+}
+
+.caption {
+  font-size: 0.75rem;
+}
+
+.body,
+.body2 {
+  font-size: 1rem;
+}
+
+.button {
+  font-size: 1.125rem;
+}
+
+.sectionLabel {
+  font-size: 1.25rem;
+}
+
+.label {
+  font-size: 1.125rem;
+}
+
+.weightSemiBold {
+  font-weight: 500;
+}
+
+.weightBold {
+  font-weight: bold;
+}

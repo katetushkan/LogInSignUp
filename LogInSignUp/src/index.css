@@ -1,0 +1,108 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --accent-color: #646cff;
+  --accent-color--62: rgba(100, 108, 255, 0.62);
+  --hover-color: #535bf2;
+  --background-color--main: #242424;
+  --error-color: #d50000;
+  --error-color--62: rgba(213, 0, 0, 0.62);
+
+
+  --secondary-color: #1a1a1a;
+  --secondary-color--80: rgba(26, 26, 26, 0.8);
+  --secondary-color--22: rgba(26, 26, 26, 0.22);
+
+
+  --colour-white: #ffffff;
+  --colour-white-24: rgba(255, 255, 255, 0.24);
+  --colour-white-80: rgba(255, 255, 255, 0.8);
+  --colour-white-50: rgba(255, 255, 255, 0.35);
+
+  color-scheme: light dark;
+  color: var(--colour-white-80);
+  background-color: var(--background-color--main);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --box-shadow: 0 0 7px 3px var(--accent-color--62);
+  --box-shadow--section: 0 0 10px 0px var(--accent-color--62);
+  --box-shadow--section-error: 0 0 10px 0px var(--error-color--62);
+
+
+  --transition-background: background-color .5s ease;
+  --transition-transform: transform 300ms ease-in-out;
+  --transition-box-shadow: transform 300ms ease-in-out;
+
+  --duration-short: 150ms;
+  --duration-standard: 300ms;
+  --easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --easing-decelerated: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+  --border-radius--s: 8px;
+  --border-radius--l: 16px;
+
+  --padding--s: 8px;
+  --padding--m: 14px;
+  --pading--l: 26px;
+
+  --margin-m: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+
+/* remove arrows for input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: var(--background-color--main);
+
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:disabled {
+  filter: grayscale(80%);
+  cursor: not-allowed;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--background-color--main);
+}
+

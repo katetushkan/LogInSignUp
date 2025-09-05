@@ -1,0 +1,33 @@
+.icon {
+  --icon-size-s: 14px;
+  --icon-size-m: 18px;
+  --icon-size-l: 22px;
+  --icon-size-xl: 28px;
+
+  display: inline-flex;
+  flex-shrink: 0;
+  aspect-ratio: 1;
+
+  width: var(--icon-size-m);
+  height: var(--icon-size-m);
+}
+
+.svg {
+  width: inherit;
+  height: inherit;
+}
+
+.small {
+  width: var(--icon-size-s);
+  height: var(--icon-size-s);
+}
+
+.large {
+  width: var(--icon-size-l);
+  height: var(--icon-size-l);
+}
+
+.extra {
+  width: var(--icon-size-xl);
+  height: var(--icon-size-xl);
+}

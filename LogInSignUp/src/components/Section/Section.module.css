@@ -1,0 +1,15 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: var(--pading--l);
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius--l);
+  box-shadow: var(--box-shadow--section);
+}
+
+.header {
+  margin-bottom: var(--margin-m)
+}

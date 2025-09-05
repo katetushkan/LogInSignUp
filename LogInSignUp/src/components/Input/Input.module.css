@@ -1,0 +1,99 @@
+.input,
+.input:-webkit-autofill {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-size: 18px;
+  flex: 1;
+
+  height: 28px;
+  width: 100%;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: var(--secondary-color) !important;
+}
+
+
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input::placeholder {
+  color: var(--secondary-color--22);
+}
+
+.inputWrapper {
+  width: 100%;
+  padding: 11px 9px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+
+  background-color: white;
+  outline: 2px solid var(--secondary-color--22);
+  border-radius: var(--border-radius--s);
+}
+
+.inputWrapper:focus-within {
+  outline: 2px solid var(--accent-color);
+}
+
+.inputWrapper.error, .inputWrapper:has(input:invalid) {
+  outline: 2px solid var(--error-color);
+}
+
+.inputWrapper:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+@media (hover: hover) {
+  .inputWrapper:hover:not(:disabled) {
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+  }
+}
+
+.label {
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.capsLock {
+  color: var(--secondary-color--22);
+}
+
+.capsLockHidden {
+  visibility: hidden;
+}
+
+.caption {
+  color: var(--colour-white-50);
+  height: 18px;
+}
+
+.error {
+  color: var(--error-color);
+}

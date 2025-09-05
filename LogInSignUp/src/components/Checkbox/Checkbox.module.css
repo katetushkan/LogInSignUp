@@ -1,0 +1,63 @@
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: white;
+  color: var(--accent-color);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    color: inherit;
+  }
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox:focus-within .icon {
+  box-shadow: 0 0 10px 0 var(--accent-color--62);
+  outline: 1px solid var(--accent-color);
+}
+
+@media (hover: hover) {
+  .checkbox:not(.checkboxDisabled) .icon:hover {
+    outline: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.checkboxChecked .icon {
+  outline: 1px solid var(--accent-color);
+}
+
+.checkboxDisabled .icon {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.checkbox.check.checkboxChecked .icon {
+  color: var(--colour-white);
+  background-color: var(--accent-color);
+}
+
+.input {
+  width: 0;
+  height: 0;
+  display: block;
+}
